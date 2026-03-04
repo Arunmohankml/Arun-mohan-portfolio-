@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arun Mohan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(135deg, #121212, #1a1a1a);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #00bcd4;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #00bcd4;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .project-box {
+      background: #1a1a1a;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      transition: 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(0, 188, 212, 0.1);
+    }
+
+    .project-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+    }
+
+    .project-box h3 {
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+
+    .project-box p {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      text-align: center;
+    }
+
+    .certificate-box {
+      background: #1a1a1a;
+      border-radius: 15px;
+      padding: 25px;
+      color: #bbb;
+      border: 1px dashed #00bcd4;
+      transition: 0.3s;
+    }
+
+    .certificate-box:hover {
+      border-color: #00e5ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 10px;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    footer a {
+      color: #00bcd4;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .socials {
+      margin-top: 10px;
+    }
+
+    .socials a {
+      color: #00bcd4;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #00e5ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arun Mohan</h1>
+    <p>Beginner Developer • Kerala • Cloud Computing Student</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>I'm <strong>Arun Mohan</strong> from Kerala, currently pursuing my <strong>B.Tech in Computer Science and Engineering (Cloud Computing specialization)</strong> at <strong>SRM Institute of Science and Technology, Ramapuram</strong>.</p>
+      <p>I started coding around the age of <strong>15–16</strong> through game server projects, especially for GTA IV CitizenIV, using <strong>HTML, CSS, and JavaScript</strong>. I enjoy building practical projects that blend creativity with real functionality.</p>
+      <p>Currently learning <strong>C, C++, Python, and JavaScript</strong>, and part of the <strong>Developer Student Club (DSC)</strong> technical team. I’m passionate about learning through hands-on experience and making tools that solve real problems.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/Web-Iphone'">
+        <h3>Web-iPhone</h3>
+        <p>A web-based iPhone simulation designed for CitizenIV/FiveM servers. Built using HTML, CSS, and JS.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/CitizenIV-masterlist'">
+        <h3>CitizenIV Masterlist</h3>
+        <p>A repository for CitizenIV-related integrations and updates — includes WebPhone and Lua resources.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/PeerWave'">
+        <h3>PeerWave</h3>
+        <p>A PeerJS API that adds in-game voice chat to your servers easily — no backend required.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/PeerWave-server'">
+        <h3>PeerWave Server</h3>
+        <p>Companion server repository for the PeerWave voice chat system.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/FiveM-CitizenIV-Lua-string-transilator'">
+        <h3>FiveM/CitizenIV Lua String Translator</h3>
+        <p>A Python-based translator for converting Lua strings, designed for game modding use.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/FoodApp'">
+        <h3>FoodApp</h3>
+        <p>A simple food-ordering app concept built using Python and HTML templates.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/PickMeUp'">
+        <h3>PickMeUp</h3>
+        <p>A basic taxi booking app interface created with HTML and CSS, demonstrating user flow design.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/India-population-predictor'">
+        <h3>India Population Predictor</h3>
+        <p>A Linear Regression model predicting population growth — simple yet effective ML use case.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/Simple-cpp-login-register-with-saver'">
+        <h3>Simple C++ Login/Register System</h3>
+        <p>A console-based login/register app that saves data locally using file handling in C++.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/KeamRank-Predictor2025'">
+        <h3>KEAM Rank Predictor 2025</h3>
+        <p>An ML-based rank predictor for the Kerala engineering entrance exam.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/Leetcode-solutions'">
+        <h3>Leetcode Solutions</h3>
+        <p>My solved Leetcode problems with explanations — focused on logic building and DSA practice.</p>
+      </div>
+
+      <div class="project-box" onclick="location.href='https://github.com/Arunmohankml/Chemistry-lab-1.0'">
+        <h3>Chemistry Lab Simulator</h3>
+        <p>A fun simulation experiment project — virtual chemistry lab built with HTML and JS.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates">
+      <div class="certificate-box">Smart India Hackathon (SIH) – Coming Soon</div>
+      <div class="certificate-box">Certificate Placeholder</div>
+      <div class="certificate-box">Certificate Placeholder</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Arun Mohan | Kerala | Beginner Developer</p>
+    <div class="socials">
+      <a href="https://github.com/Arunmohankml">GitHub</a> |
+      <a href="https://www.instagram.com/4nuun">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
